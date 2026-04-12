@@ -9,6 +9,37 @@ This project is **not** primarily a better summarizer. It is a **measurement and
 
 Every decision is logged in a reproducible audit trail, turning model outputs into an inspectable safety dataset.
 
+## Repository structure
+
+```text
+safe-discharge-summary/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── configs/
+├── notebooks/
+├── results/
+│   └── figures/
+│       ├── 01_hallucination_by_model.png
+│       ├── 02_decision_breakdown.png
+│       ├── 03_refusal_reasons.png
+│       ├── 04_entailment_distribution.png
+│       ├── 05_contradiction_catch.png
+│       └── 06_llm_vs_groundtruth.png
+├── src/
+│   ├── __init__.py
+│   ├── audit_v2.py
+│   ├── bq_cohort.py
+│   ├── bq_mimic_probe.py
+│   ├── bq_smoketest.py
+│   ├── cohort.py
+│   ├── cohort_v2.py
+│   ├── ds_audit.py
+│   ├── llm_generate.py
+│   └── plots_v2.py
+└── tests/
+
+
 ## Why this project matters
 
 LLM discharge summaries are useful only if each claim can be justified against source clinical notes. This repository builds a **proof-carrying audit workflow** in which every claim ships with either:
@@ -74,34 +105,4 @@ This figure highlights the **fidelity gap** between audited LLM outputs and the 
 | Documentation | 2 | 9.5% |
 | Other | 2 | 9.5% |
 | Text / misc | 1 | 4.8% |
-
-## Repository structure
-
-```text
-safe-discharge-summary/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── configs/
-├── notebooks/
-├── results/
-│   └── figures/
-│       ├── 01_hallucination_by_model.png
-│       ├── 02_decision_breakdown.png
-│       ├── 03_refusal_reasons.png
-│       ├── 04_entailment_distribution.png
-│       ├── 05_contradiction_catch.png
-│       └── 06_llm_vs_groundtruth.png
-├── src/
-│   ├── __init__.py
-│   ├── audit_v2.py
-│   ├── bq_cohort.py
-│   ├── bq_mimic_probe.py
-│   ├── bq_smoketest.py
-│   ├── cohort.py
-│   ├── cohort_v2.py
-│   ├── ds_audit.py
-│   ├── llm_generate.py
-│   └── plots_v2.py
-└── tests/
 
