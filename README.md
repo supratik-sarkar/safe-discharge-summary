@@ -48,7 +48,7 @@ The current cohort is organized into five surgical domains:
 - neuro
 - abdominal
 
-## Most important figures
+## Select figures
 
 ### 1. Hallucination / refusal profile across models
 This is the headline comparison showing how often each model produces claims that the governance gate refuses.
@@ -64,6 +64,16 @@ This figure shows how claims are distributed across release and refusal categori
 This figure highlights the **fidelity gap** between audited LLM outputs and the human-authored discharge summary baseline.
 
 ![LLM vs ground truth](results/figures/06_llm_vs_groundtruth.png)
+
+## File-type composition
+ 
+| Category | Count | Percentage |
+|---|---:|---:|
+| Python source | 10 | 47.6% |
+| Figures / media | 6 | 28.6% |
+| Documentation | 2 | 9.5% |
+| Other | 2 | 9.5% |
+| Text / misc | 1 | 4.8% |
 
 ## Repository structure
 
