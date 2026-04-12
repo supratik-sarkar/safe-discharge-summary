@@ -38,7 +38,7 @@ safe-discharge-summary/
 │   ├── llm_generate.py
 │   └── plots_v2.py
 └── tests/
-
+```
 
 ## Why this project matters
 
